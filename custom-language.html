@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Programming Language - Benas Petronis</title>
+    <title>Marila Programming Language - Benas Petronis</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>
@@ -186,96 +186,52 @@
     <div class="container">
         <a href="index.html" class="back-link">← Back to portfolio</a>
 
-        <h1>Custom Programming Language</h1>
-        <p class="meta">Programming Languages • Compiler Design</p>
+        <h1>Marila Programming Language</h1>
+        <p class="meta">Domain-Specific Language • Mathematical Visualization</p>
 
         <div class="tags">
-            <span class="tag">compiler design</span>
-            <span class="tag">interpreter</span>
-            <span class="tag">language theory</span>
-            <span class="tag">rust</span>
-            <span class="tag">formal grammars</span>
+            <span class="tag">domain-specific language</span>
+            <span class="tag">python</span>
+            <span class="tag">mathematical documents</span>
+            <span class="tag">animation</span>
+            <span class="tag">vector geometry</span>
         </div>
 
         <div class="content">
             <h2>Overview</h2>
             <p>
-                Designing and implementing a custom programming language from scratch. This project explores the full 
-                stack of language implementation, from lexical analysis and parsing to code generation and optimization.
+                Marila is a Python-backed domain-specific language for mathematical documents, motion graphics, and
+                Euclidean vector diagrams. Its concise syntax supports document, video, and image file types, with a
+                command-line workflow for syntax checking and rendering output.
             </p>
 
             <div class="highlight">
-                <p><strong>Goal:</strong> Create a practical, expressive programming language with modern features 
-                while understanding the theoretical foundations of computation and formal languages.</p>
+                <p><strong>Goal:</strong> Make mathematical writing and visual explanations programmable through one
+                expressive, purpose-built language.</p>
             </div>
 
-            <h2>Implementation Phases</h2>
-            
-            <h3>1. Lexical Analysis</h3>
-            <p>
-                Building a lexer/tokenizer that converts source code into a stream of tokens. Handles identifier 
-                recognition, keyword detection, literal parsing (integers, floats, strings), operator tokenization, 
-                and whitespace/comment filtering. Implements finite automata for pattern matching.
-            </p>
-
-            <h3>2. Syntax Analysis (Parsing)</h3>
-            <p>
-                Implementing a recursive descent parser (or LL(1)/LR(1) parser) to construct an Abstract Syntax Tree 
-                (AST) from the token stream. Manages operator precedence, associativity, error recovery, and syntactic 
-                validation. Defines formal grammar using BNF/EBNF notation.
-            </p>
-
-            <h3>3. Semantic Analysis</h3>
-            <p>
-                Performing type checking, scope resolution, symbol table management, and semantic validation. Implements 
-                type inference algorithms, detects semantic errors (type mismatches, undefined variables), and annotates 
-                the AST with type information.
-            </p>
-
-            <h3>4. Intermediate Representation</h3>
-            <p>
-                Transforming the AST into an intermediate representation (IR) for optimization and target-independent 
-                transformations. Explores three-address code, SSA (Static Single Assignment) form, or bytecode 
-                representations.
-            </p>
-
-            <h3>5. Code Generation</h3>
-            <p>
-                Generating target code from the IR. Options include:
-            </p>
+            <h2>Language Formats</h2>
             <ul>
-                <li><strong>Interpreter:</strong> Direct execution of AST or bytecode</li>
-                <li><strong>Bytecode Compiler:</strong> Targeting a virtual machine (JVM, WebAssembly, custom VM)</li>
-                <li><strong>Native Compiler:</strong> Generating machine code (x86-64, ARM assembly)</li>
-                <li><strong>Source-to-Source:</strong> Transpiling to C, Rust, or other high-level languages</li>
+                <li><strong>Documents:</strong> Typeset mathematical papers, definitions, equations, and theorems.</li>
+                <li><strong>Video:</strong> Create Manim-style shape animations and animated mathematical plots.</li>
+                <li><strong>Images:</strong> Describe TikZ-style Euclidean diagrams with points, lines, angles, and shapes.</li>
             </ul>
 
-            <h3>6. Optimization (Optional)</h3>
+            <h2>Command-Line Workflow</h2>
             <p>
-                Applying compiler optimizations: constant folding, dead code elimination, loop unrolling, inlining, 
-                register allocation, and instruction scheduling. Balances compilation speed with runtime performance.
+                Marila scripts are checked and rendered through the Python CLI. Documents and animations can be compiled
+                to HTML, while vector diagrams can be rendered to SVG for use in mathematical explanations.
             </p>
-
-            <h2>Language Features</h2>
-            <ul>
-                <li>Static/dynamic typing with type inference</li>
-                <li>First-class functions and closures</li>
-                <li>Memory safety with automatic memory management (GC or ownership model)</li>
-                <li>Pattern matching and algebraic data types</li>
-                <li>Metaprogramming capabilities (macros, compile-time evaluation)</li>
-                <li>Concurrency primitives (async/await, actors, or CSP)</li>
-            </ul>
 
             <h2>Technologies & Tools</h2>
             <p>
-                Implemented primarily in Rust for safety and performance. Uses parser generator tools (ANTLR, yacc/bison) 
-                or hand-written parsers. Testing with property-based testing frameworks. Build system integration with 
-                Cargo.
+                Implemented on top of Python, with a command-line interface that checks Marila source files and renders
+                documents to HTML, animations to HTML, and vector diagrams to SVG.
             </p>
         </div>
 
         <div class="links">
-            <a href="https://github.com/Bencode12">GitHub Repository</a>
+            <a href="https://github.com/ker0s3ner/Marila" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
             <a href="#">View Documentation</a>
         </div>
     </div>
